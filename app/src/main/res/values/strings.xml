@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">JoomChallenge</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="giphy_api_key">vq7A8VVJI6UZTYGQgpc8KAsPSPin95S6</string>
+    <string name="loading_list_message">Loading gifs. Please wait…</string>
+    <string name="loading_item_message">Loading gif. Please wait…</string>
+    <string name="generic_error_message">Something went wrong. Check your internet connection and try again.</string>
+    <string name="http_error_message">Error while loading gifs. Server said: %1$s</string>
+    <string name="btn_retry">Retry</string>
+    <string name="title_username">Username</string>
+    <string name="title_name">Name</string>
+    <string name="title_twitter">Twitter</string>
+    <string name="title_profile">Profile</string>
+    <string name="screen_title_gif_list">List of gifs</string>
+    <string name="screen_title_gif_details_unknown">Gif: %1$s</string>
+    <string name="shared_item_tag">shared_item</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/usernameTitle"
+        style="@style/ListItem.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_username"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/username"
+        style="@style/ListItem.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_double"
+        android:layout_marginTop="@dimen/margin_quarter"
+        android:visibility="gone"
+        tools:text="Username"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/nameTitle"
+        style="@style/ListItem.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_name"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/ListItem.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_double"
+        android:layout_marginTop="@dimen/margin_quarter"
+        android:visibility="gone"
+        tools:text="Name"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/twitterTitle"
+        style="@style/ListItem.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_twitter"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/twitter"
+        style="@style/ListItem.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_double"
+        android:layout_marginTop="@dimen/margin_quarter"
+        android:visibility="gone"
+        tools:text="Username"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/profileTitle"
+        style="@style/ListItem.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_profile"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/profile"
+        style="@style/ListItem.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_double"
+        android:layout_marginTop="@dimen/margin_quarter"
+        android:autoLink="web"
+        android:visibility="gone"
+        tools:text="profile link"
+        tools:visibility="visible"/>
+
+</merge>

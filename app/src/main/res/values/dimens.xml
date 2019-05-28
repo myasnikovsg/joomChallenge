@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gif_preview_width">480dp</dimen>
+    <dimen name="card_default_elevation">2dp</dimen>
+    <dimen name="card_pressed_elevation">8dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="margin_double">16dp</dimen>
+    <dimen name="margin_half">4dp</dimen>
+    <dimen name="margin_quarter">2dp</dimen>
+    <dimen name="icon_size">48dp</dimen>
+    <dimen name="button_width">80dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="margin_list">72dp</dimen>
+
+    <dimen name="title_text_size">10sp</dimen>
+    <dimen name="label_text_size">16sp</dimen>
+</resources>
