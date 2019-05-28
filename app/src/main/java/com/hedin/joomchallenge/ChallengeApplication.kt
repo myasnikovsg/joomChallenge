@@ -32,17 +32,14 @@ class ChallengeApplication : Application() {
             cache.mkdirs()
         }
 
-        val diskCache = Cache(cache, CONFIG_PICASSO_DISK_CACHE_SIZE.toLong())
-        val lruCache = LruCache(CONFIG_PICASSO_MEMORY_CACHE_SIZE)
-
         val okHttpClient = OkHttpClient.Builder()
-                .cache(diskCache)
+                .cache(Cache(cache, CONFIG_PICASSO_DISK_CACHE_SIZE.toLong()))
                 .retryOnConnectionFailure(true)
                 .build()
 
         val builder = Picasso.Builder(this)
         if (CONFIG_PICASSO_USE_LRU_CACHE) {
-            builder.memoryCache(lruCache)
+            builder.memoryCache(LruCache(CONFIG_PICASSO_MEMORY_CACHE_SIZE))
         }
 
         val picasso = builder
