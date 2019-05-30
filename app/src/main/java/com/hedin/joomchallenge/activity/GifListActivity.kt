@@ -34,6 +34,7 @@ import com.hedin.joomchallenge.CONFIG_GRID_HORIZONTAL_COLUMNS
 import com.hedin.joomchallenge.CONFIG_GRID_HORIZONTAL_THRESHOLD_ROWS
 import com.hedin.joomchallenge.CONFIG_GRID_VERTICAL_COLUMNS
 import com.hedin.joomchallenge.CONFIG_GRID_VERTICAL_THRESHOLD_ROWS
+import com.hedin.joomchallenge.ChallengeApplication.Companion.gson
 import com.hedin.joomchallenge.fragment.GifListRetainerFragment
 
 class GifListActivity : AppCompatActivity() {
@@ -229,7 +230,7 @@ class GifListActivity : AppCompatActivity() {
 
             hasData = true
         } else {
-            val giphyError = Gson().fromJson(gifListResponse.errorBody().charStream(), GiphyError::class.java)
+            val giphyError = gson.fromJson(gifListResponse.errorBody().charStream(), GiphyError::class.java)
 
             handleError(getString(R.string.http_error_message, giphyError?.message)
                     ?: getString(R.string.generic_error_message))

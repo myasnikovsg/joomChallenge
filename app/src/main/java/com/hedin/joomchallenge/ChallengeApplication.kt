@@ -1,6 +1,7 @@
 package com.hedin.joomchallenge
 
 import android.app.Application
+import com.google.gson.Gson
 import com.squareup.picasso.LruCache
 import com.squareup.picasso.OkHttp3Downloader
 import com.squareup.picasso.Picasso
@@ -15,6 +16,7 @@ class ChallengeApplication : Application() {
             private set
         lateinit var GIPHY_API_KEY: String
             private set
+        val gson = Gson()
     }
 
     override fun onCreate() {

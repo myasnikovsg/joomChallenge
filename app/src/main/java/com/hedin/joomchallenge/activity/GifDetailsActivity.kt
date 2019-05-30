@@ -7,6 +7,7 @@ import android.view.MenuItem
 import android.view.View
 import com.google.gson.Gson
 import com.hedin.joomchallenge.ChallengeApplication
+import com.hedin.joomchallenge.ChallengeApplication.Companion.gson
 import com.hedin.joomchallenge.R
 import com.hedin.joomchallenge.asReadableMessage
 import com.hedin.joomchallenge.crossfade
@@ -130,7 +131,7 @@ class GifDetailsActivity : AppCompatActivity() {
                 presentContent()
             }
         } else {
-            val giphyError = Gson().fromJson(itemResponse.errorBody().charStream(), GiphyError::class.java)
+            val giphyError = gson.fromJson(itemResponse.errorBody().charStream(), GiphyError::class.java)
 
             handleError(getString(R.string.http_error_message, giphyError?.message)
                     ?: getString(R.string.generic_error_message))
